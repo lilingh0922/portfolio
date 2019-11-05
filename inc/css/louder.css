@@ -1,0 +1,3468 @@
+body {
+    color: #333333;
+    min-width: 320px;
+}
+
+.txt_rt {
+    text-align: right;
+}
+
+.txt_ct {
+    text-align: center;
+}
+
+.txt_imp {
+    color: #fc6d3a;
+}
+
+.mt_30 {
+    margin-top: 30px;
+}
+
+.mb_30 {
+    margin-bottom: 30px;
+}
+
+.h2 {
+    /*  color: #932C8B;*/
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 版面設定 */
+
+.star-container {
+    width: 1200px;
+
+    position: relative;
+    margin: 0 auto;
+}
+
+.travel-panel {
+    display: block;
+}
+
+.travel-panel .panel-heading {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 麵包屑 */
+
+.path .breadcrumb {
+    margin: 10px 0 5px 0;
+    padding-right: 120px;
+}
+
+
+.path .breadcrumb {
+    background-color: transparent;
+    font-size: 14px;
+    padding: 0;
+}
+
+.path .breadcrumb>li {
+    display: inline-block;
+}
+
+.path .breadcrumb>li a {
+    color: #666666;
+    transition: .3s;
+}
+
+.path .breadcrumb>li a:focus,
+.path .breadcrumb>li a:hover {
+    color: #771a7a;
+    background-color: #eee4ee;
+    text-decoration: none;
+}
+
+.path .breadcrumb>li+li:before {
+    font-family: FontAwesome;
+    content: "\f105";
+    color: #666666;
+    font-weight: normal;
+}
+
+.groupNum {
+    margin-bottom: 10px;
+    color: #808080;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 功能鍵 */
+
+.shareIcon {
+    width: 35px !important;
+    position: fixed;
+    width: 35px;
+    top: calc(50% - 30*4px);
+    right: 22px;
+    z-index: 4;
+}
+
+.shareIcon a {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #c2c1c1;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 2px;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+.shareIcon i {
+    position: relative;
+    line-height: 33px;
+}
+
+.shareIcon .icon-word {
+    background-image: url(../css/assets/word.svg);
+}
+
+.shareIcon .icon-fb {
+    background-image: url(../css/assets/icon-fb-gray.svg);
+}
+
+.shareIcon .icon-line {
+    background-image: url(../css/assets/icon-line.svg);
+}
+
+.shareIcon .icon-print {
+    background-image: url(../css/assets/icon-print.svg);
+}
+
+.shareIcon .icon-line:hover {
+    background-color: #00b900;
+}
+
+.shareIcon .icon-word:hover {
+    background-color: #285395;
+}
+
+.shareIcon .icon-print:hover {
+    background-color: #ac5d2d;
+}
+
+.shareIcon .icon-fb:hover {
+    background-color: #4867aa;
+}
+
+.shareIcon .icon-qrcode:hover {
+    background-color: #8b48a0;
+}
+
+.shareIcon .tooltip {
+
+    word-break: keep-all;
+}
+
+.qrcode_img {
+    /*position: absolute;*/
+    width: calc(100% - 30px);
+    height: 40vh;
+    margin: 20px 0;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    top: calc(50% - 25vh);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--簡介--*/
+
+.travelInformation .travelInformation-more-mobile {
+    width: 100%;
+    height: 100px;
+    padding-top: 60px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+}
+
+.travelInformation .travelInformation-more-mobile>a {
+    color: #007cbf;
+    text-decoration: underline;
+}
+
+.travelInformation .travelTitle {
+
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.introduction {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+.introduction .brief_info {
+    width: 50%;
+    float: left;
+    min-height: 320px;
+    margin: 0 0 10px 0px;
+}
+
+
+.introduction .brief_info .spec {
+    max-width: 600px;
+    border-bottom: 2px dashed #efefef;
+}
+
+.introduction .brief_info .spec:last-child {
+    border: none;
+}
+
+.introduction .spec .item_container {
+    margin: 10px 0 15px 0;
+}
+
+.introduction .spec .item {
+    position: relative;
+    padding: 10px 10px 5px 0;
+}
+
+.introduction .spec .item .title {
+    position: absolute;
+}
+
+.introduction .spec .item_container.info .item .title {
+    position: relative;
+    color: #ffa500;
+    font-weight: bolder;
+}
+
+.introduction .spec .item_container.info .item .txt {
+    padding: 0 0 0 34px;
+}
+
+.introduction .spec .item_container.info .item ul li {
+
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.introduction .spec .item_container:not(.info) .item .title:after {
+    content: ' : ';
+    position: relative;
+}
+
+.introduction .spec .item .title i {
+    border-radius: 100%;
+    background: #c2c1c1;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.introduction .spec .item .txt {
+    width: 100%;
+    display: block;
+    padding-left: 80px;
+    line-height: 30px;
+}
+
+.introduction .spec .info .item .title i {
+    background: #ffa500;
+}
+
+.introduction .spec .info .item .txt {
+    padding-left: 110px;
+}
+
+
+.qrcode {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    right: 3px;
+}
+
+.qrcode img {
+    width: 100%;
+}
+
+.marketing_name {
+    display: inline-block;
+    font-weight: bolder;
+    display: inline-block;
+    width: 80%;
+    line-height: 35px;
+    word-break: keep-all;
+}
+
+.marketing_name span {
+    border: 2px solid #ffa500;
+    border-radius: 100px;
+    padding: 5px 12px;
+    color: #ffa500;
+    font-size: 18px;
+}
+
+
+
+.introduction .photos {
+    width: 50%;
+    float: left;
+    padding: 0 15px 0 0;
+}
+
+.introduction .photos .swiper-container,
+.introduction .photos .swiper-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+
+.introduction .photos .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 450px;
+    overflow: hidden;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.introduction .photos .swiper-slide .img_filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    cursor: all-scroll;
+}
+
+.introduction .photos .swiper-slide .location {
+
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 100%;
+    padding-right: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    opacity: 0.9;
+    line-height: 340px;
+    color: white;
+    text-align: right;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 8px rgba(15, 15, 15, 1);
+}
+
+.introduction .photos .swiper-slide .location:before {
+    font-family: "FontAwesome";
+    content: "\f041";
+}
+
+.introduction .photos .swiper-pagination {
+    position: relative;
+    height: 130px;
+    display: flex;
+    bottom: -10px;
+}
+
+.introduction .photos .swiper-pagination .img_filter {
+    height: 130px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.introduction .photos .swiper-pagination-bullet {
+    flex-grow: 1;
+    height: auto;
+    border-radius: 0;
+    background: white;
+    opacity: 0.5;
+}
+
+.introduction .photos .swiper-pagination-bullet:first-child {
+    margin-left: 0px;
+}
+
+.introduction .photos .swiper-pagination-bullet:last-child {
+    margin-right: 0px;
+}
+
+.introduction .photos .swiper-pagination-bullet img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.8);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.introduction .photos .swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
+}
+
+.introduction .photos .swiper-pagination-bullet-active img {
+
+    filter: brightness(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--booking info-*/
+
+.booking_info {
+    float: right;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+
+.booking_info .price {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #ff4200;
+    display: block;
+}
+
+.booking_info .price:after {
+    content: "元起";
+    color: #808080;
+    font-size: 14px;
+    position: relative;
+    left: -5px;
+}
+
+.booking_info .price p {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.booking_info .deposit {
+    color: #808080;
+    display: inline-block;
+}
+
+.booking_info .txt {
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.booking_info .btn_box {
+    position: relative;
+    width: 50%;
+    display: inline-block;
+}
+
+.view_num {
+
+    margin-top: 5px;
+    font-size: 16px;
+    display: block;
+
+    color: #808080;
+}
+
+.view_num i {
+    font-weight: bolder;
+    margin-right: 15px;
+    color: pink;
+}
+
+.booking_info .remain_space {
+    color: #ff4200;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+}
+
+.booking_info .star_mark {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+}
+
+.booking_info .star_mark img {
+    width: 25px;
+}
+
+
+.booking_info .signUpBtn {}
+
+.booking_info .signUpBtn {
+    border-radius: 100px;
+    line-height: 50px;
+    font-size: 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+
+    font-weight: bold;
+    background-color: #ff4200;
+
+    color: #ffffff;
+    transition: .3s;
+}
+
+.booking_info .signUpBtn:focus,
+.booking_info .signUpBtn:hover {
+    text-decoration: none;
+    background-color: #771a7a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--三區塊-*/
+
+.bk {
+    background: #eeeeee;
+    padding: 20px 0 45px 0;
+}
+
+.travel-3block {
+    border: 0px solid transparent;
+    display: flex;
+}
+
+.travel-3block .item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 33.33%;
+}
+
+.travel-3block .travel-3block-img {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 65px;
+}
+
+.travel-3block .travel-3block-img i {
+    font-size: 50px;
+    color: #d0d0d0;
+}
+
+.travel-3block .travel-3block-text {
+
+    display: inline-block;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
+.travel-3block a.event {
+    border-radius: 100px;
+    padding: 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--月曆-*/
+
+.travel-calendar .box_con {
+    display: inline-block;
+    width: 100%;
+}
+
+.travel-calendar-btn {
+    text-align: center;
+    position: relative;
+    height: 70px;
+}
+
+.travel-calendar-btn .curve {
+    display: inline-block;
+    position: absolute;
+    background: url(assets/curve.svg) no-repeat;
+    background-size: 200%;
+    background-position: bottom;
+    transition: 0.2s;
+    height: 0;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+    top: 0;
+}
+
+.travel-calendar-btn a {
+    z-index: 2;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    font-size: 18px;
+    font-weight: bolder;
+    background: #eeeeee;
+    color: rgba(55, 71, 79, 1);
+    padding: 15px 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 0.2s;
+}
+
+.travel-calendar-btn:hover a,
+.travel-calendar-btn:focus a {
+    margin-top: 15px;
+    -moz-animation: bounce 1s 1;
+    -webkit-animation: bounce 1s 1;
+    animation: bounce 1s 1;
+    animation-timing-function: linear;
+    transition: 0.2s;
+}
+
+.travel-calendar-btn:hover .curve,
+.travel-calendar-btn:focus .curve {
+    height: 15px;
+    transition: 0.2s;
+    -moz-animation: bkbounce 1s 1;
+    -webkit-animation: bkbounce 1s 1;
+    animation: bkbounce 1s 1;
+    animation-timing-function: linear;
+}
+
+
+
+.travel-calendar-close {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.travel-calendar-close .travel-calendar-close-btn {
+    margin-top: 20px;
+}
+
+.travel-calendar-close a span {
+    width: 0;
+    margin-left: 5px;
+    display: inline-block;
+    border-bottom: 8px solid #0082c8;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    transition: .3s
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 行程日曆 */
+
+.travel-calendar {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    display: none;
+    padding: 0 20px;
+
+    width: 90%;
+    margin: 20px auto;
+}
+
+.travel-calendar .box {
+
+    background: white;
+    width: calc((100vw - (100vw - 100%))*0.48);
+    float: left;
+    margin: 1%;
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.travel-calendar .control_btn {
+    float: left;
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    position: absolute;
+    color: #42275a;
+}
+
+.travel-calendar .control_btn.pre {
+    left: 50px;
+}
+
+.travel-calendar .control_btn.next {
+    right: 50px;
+}
+
+.travel-calendar .box .title {
+    padding: 20px 25px;
+    width: 100%;
+    /*  background: #42275a;*/
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    color: #601986;
+    font-weight: bolder;
+}
+
+
+.travel-calendar .weekdays {
+    margin: 0;
+    padding: 10px 0;
+
+
+    /*  background: #42275a;*/
+}
+
+.travel-calendar .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #601986;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.travel-calendar .days {
+    background: white;
+    margin: 0;
+}
+
+.travel-calendar .days li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    width: 14.2857%;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    color: #333;
+    height: 100px;
+}
+
+.travel-calendar .days li.available {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.travel-calendar .days li.current,
+.travel-calendar .days li.available.current:hover {
+    border: 1px solid #42275a;
+}
+
+.travel-calendar .days li.current.available .date,
+.travel-calendar .days li.current.available:hover .date {
+    background: #42275a;
+    color: white;
+    transition: 0.2s;
+}
+
+.travel-calendar .days li.available:hover {
+    border: 1px solid #c2c1c1;
+}
+
+.travel-calendar .days li:nth-child(7n+1) {
+    border-left: 1px solid transparent;
+}
+
+.travel-calendar .days li span {
+    display: block;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: right;
+    color: #808080;
+    padding-right: 5px;
+}
+
+.travel-calendar .days li.not-available span {
+    color: #c2c1c1;
+}
+
+.travel-calendar .days li i {
+    font-size: 12px;
+    font-family: "微軟正黑體";
+
+    float: right;
+    position: absolute;
+    display: inline-block;
+    color: #808080;
+    top: 0px;
+    color: #666666;
+    right: 0px;
+
+    background: #f4ecf5;
+    padding: 5px;
+    font-weight: bolder;
+    min-width: 20px;
+    text-align: right;
+
+
+    /*border-bottom-left-radius: 12px;*/
+}
+
+.travel-calendar .days li i:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    padding-right: 2px;
+}
+
+.travel-calendar .days li i:after {
+    font-family: 'icomoon';
+    content: "\e906";
+    color: #f4ecf5;
+    position: absolute;
+    left: -16px;
+    font-size: 22px;
+    top: 0px;
+
+}
+
+/*firefox*/
+@-moz-document url-prefix() {
+    .travel-calendar .days li i:after {
+        font-size: 23px;
+        left: -17px;
+    }
+}
+
+
+.travel-calendar .days li.current i {
+
+    opacity: 0.95;
+}
+
+.travel-calendar .days li .date {
+    padding: 1px 5px;
+    display: inline-block;
+    color: #c2c1c1;
+    width: 100%;
+    text-align: left;
+}
+
+.travel-calendar .days li.available .date {
+    color: #666666;
+    background: #dddddd;
+    font-weight: bolder;
+}
+
+
+.travel-calendar .days li.available:hover .date {
+    background: #d4d4d4;
+}
+
+.travel-calendar .days li .price {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.travel-calendar .days li.available .price {
+
+    color: #ff4200;
+}
+
+
+.travel-calendar .days li.available .more {
+    color: #008cd7;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--交通資訊-*/
+
+.panel-collapse.collapse {
+    display: block;
+    visibility: visible;
+    height: auto !important;
+}
+
+
+
+
+.panel-collapse.collapse {
+    display: block;
+    visibility: visible;
+    height: auto !important;
+}
+
+
+
+
+.flight_detail .go,
+.flight_detail .back {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.flight_detail .go {
+    margin-bottom: 30px;
+}
+
+
+.flight_detail .flight {
+    display: flex;
+    width: 100%;
+    line-height: 24px;
+
+    vertical-align: middle;
+    font-size: 18px;
+    padding: 10px 10px 10px 20px;
+    flex-wrap: wrap;
+}
+
+.flight_detail .box.focus.flight:hover,
+.flight_detail .box.focus .flight.hover {
+    background-color: #f4ecf5;
+}
+
+
+.flight_detail .flight>.box {
+    margin: 0 10px 0 0;
+    color: #808080;
+}
+
+.flight_detail .flight .flight_date {
+
+    min-width: 100px;
+}
+
+.flight_detail .flight .flight_time {
+    min-width: 130px;
+}
+
+.flight_detail .flight .airline {
+    min-width: 160px;
+}
+
+.flight_detail .flight .flight_time .time:first-child:after {
+    font-family: FontAwesome;
+    content: "\f178";
+    color: #666666;
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+    padding-left: 5px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+.flight_detail .flight .airport {
+    min-width: 320px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.flight_detail .flight .airport .city {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.flight_detail .flight .airport .city:first-child {
+    text-align: right;
+}
+
+.flight_detail .flight .fa-long-arrow-right {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.flight_detail .flight .status {
+    color: #808080;
+    font-size: 14px;
+}
+
+.flight_detail .flight .status:before {
+    font-family: FontAwesome;
+    content: "\f017";
+}
+
+.traffic.txt_imp {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*交通progress code*/
+
+.flight_detail .title {
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+.flight_detail .title .tag {
+    font-weight: bolder;
+    color: #932C8B;
+    padding-left: 10px;
+}
+
+.flight_detail .title .duration {
+    float: right;
+}
+
+.flight_detail .title .duration:before {
+    content: '旅程: ';
+}
+
+.flight_detail .summary {
+
+    width: 100%;
+    display: flex;
+
+    border-bottom: 1px dashed #f4ecf5;
+    padding: 20px 0;
+}
+
+.flight_detail .summary:after {
+    font-family: FontAwesome, '微軟正黑體';
+    content: "\f077";
+    cursor: pointer;
+    position: relative;
+    flex-grow: 1;
+    top: 15px;
+
+    color: #932C8B;
+    text-align: right;
+    padding-right: 20px;
+    float: right;
+}
+
+.flight_detail .summary.collapsed:after {
+    font-family: FontAwesome, '微軟正黑體';
+    content: "\f078";
+}
+
+.flight_detail .summary .info {
+    width: 150px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.flight_detail .summary .info .time .clock {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.flight_detail .summary .info .time .note {
+    font-size: 12px;
+    color: red;
+
+}
+
+
+.flight_detail .summary .graph {
+    flex-basis: 70%;
+}
+
+
+.flight_detail .summary .graph .progress_bar {
+    display: flex;
+    align-content: stretch;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.flight_detail .summary .graph .progress_bar .bar {
+    border-radius: 0px;
+    text-align: center;
+    color: white;
+    height: 100%;
+    position: relative;
+    height: 6px;
+}
+
+.flight_detail .summary .graph .progress_bar .bar:first-child {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.flight_detail .summary .graph .progress_bar .bar:last-child {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.flight_detail .summary .graph .progress_bar .bar.flying {
+    background: rgba(147, 44, 139, 0.5);
+}
+
+.flight_detail .box.focus .summary .graph .progress_bar .bar.flying.hover {
+    background: rgba(147, 44, 139, 1);
+    color: black;
+    box-shadow: 2px 0px 3px gray;
+    /*  text-shadow: 0px 0px 1px gray;*/
+}
+
+.flight_detail .box .summary .graph .progress_bar .bar .txt .duration {
+
+    color: #808080;
+}
+
+.flight_detail .box.focus .summary .graph .progress_bar .bar.flying.hover .txt .duration {
+    color: rgba(147, 44, 139, 1);
+}
+
+
+.flight_detail .summary .graph .progress_bar .bar.layover {
+    background: #808080;
+    margin: 0 5px;
+}
+
+.flight_detail .summary .graph .progress_bar .bar .txt {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+    color: #808080;
+}
+
+.flight_detail .summary .graph .progress_bar .bar .txt i {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    left: 0;
+}
+
+.flight_detail .summary .graph .progress_bar .bar .txt .tooltip {
+    word-break: keep-all;
+    min-width: 80px;
+}
+
+.flight_detail .box .summary .graph .progress_bar .bar .txt .duration>span {
+    word-break: keep-all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--行程特色-*/
+
+.travel-highlight .theme {
+    margin-bottom: 50px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.travel-highlight .theme.map {
+    border: 0px solid transparent;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+
+.travel-highlight .theme .topic {
+    display: block;
+    width: 80px;
+    text-align: center;
+    font-size: 40px;
+    z-index: 3;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    color: white;
+    line-height: 80px;
+    max-height: 300px;
+    background: #141E30;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));
+}
+
+.travel-highlight .theme.map .topic {
+    display: none;
+}
+
+.travel-highlight .theme .topic_zh {
+    display: block;
+    writing-mode: vertical-lr;
+    margin: 10px 0;
+}
+
+.travel-highlight .theme .topic_en {
+    display: block;
+    text-align: left;
+
+
+
+    font-size: 22px;
+
+    writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.travel-highlight .theme:nth-child(5n+1) .topic {
+    background: #243B55;
+    background: -webkit-linear-gradient(to top, transparent, #243B55);
+    background: linear-gradient(to top, transparent, #243B55);
+}
+
+.travel-highlight .theme:nth-child(5n+2) .topic {
+    background: #076585;
+    background: -webkit-linear-gradient(to top, transparent, #076585);
+    background: linear-gradient(to top, transparent, #076585);
+}
+
+.travel-highlight .theme:nth-child(5n+3) .topic {
+    background: #481b6f;
+    background: -webkit-linear-gradient(to top, transparent, #481b6f);
+    background: linear-gradient(to top, transparent, #481b6f);
+}
+
+.travel-highlight .theme:nth-child(5n+4) .topic {
+    background: #076a9f;
+    background: -webkit-linear-gradient(to top, transparent, #076a9f);
+    background: linear-gradient(to top, transparent, #076a9f);
+}
+
+.travel-highlight .theme:nth-child(5n) .topic {
+    background: #a66aa2;
+    background: -webkit-linear-gradient(to top, transparent, #a66aa2);
+    background: linear-gradient(to top, transparent, #a66aa2);
+}*/
+
+.travel-highlight .spot {
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto;
+}
+
+
+
+.travel-highlight .spot .img_box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-height: 590px;
+    height: 56.25vw;
+    max-width: 1200px;
+}
+
+.travel-highlight .spot.img2.portrait .img_box {
+    flex-direction: row-reverse;
+}
+
+
+.travel-highlight .spot .img_filter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.travel-highlight .map .spot .img_filter {
+    background-size: contain;
+    background-position: center top;
+}
+
+.travel-highlight .theme.map .img_filter:after {
+    display: none;
+}
+
+
+
+.travel-highlight .spot .img_filter:after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.travel-highlight .spot .txt_box {
+    width: 100%;
+    min-height: 60px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 10px 30px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.travel-highlight .spot.img2.portrait .txt_box {
+    right: 0;
+}
+
+
+.travel-highlight .spot.img1 .txt_box .title {
+    margin: 5px 0;
+}
+
+.travel-highlight .spot.img1 .txt_box p {
+    margin-bottom: 10px;
+}
+
+
+.travel-highlight .spot .txt_box .title {
+    font-size: 20px;
+    display: inline-block;
+    margin: 2px 0;
+    font-weight: bolder;
+}
+
+.travel-highlight .spot .txt_box .title:before {
+    display: none;
+}
+
+
+
+
+
+.travel-highlight .spot .txt_box p {
+    line-height: 20px;
+    font-size: 16px;
+    bottom: 0;
+    color: inherit;
+}
+
+.travel-highlight .spot.img2.landscape .img_box {
+    height: 36vw;
+    max-height: 375px;
+}
+
+.travel-highlight .spot.img2.landscape .img_box .img_filter.rec {
+    width: 65%;
+}
+
+.travel-highlight .spot.img2.landscape .img_box .img_filter.square {
+    width: 35%;
+}
+
+.travel-highlight .spot.img2.portrait .img_box {
+    height: 64vw;
+    max-height: 670px;
+}
+
+.travel-highlight .spot.img2.portrait .img_box .img_filter.rec {
+    width: 35%;
+}
+
+.travel-highlight .spot.img2.portrait .img_box .img_filter.square {
+    width: 65%;
+}
+
+
+.travel-highlight .spot.img2.landscape .txt_box {
+    position: relative;
+    color: #333333;
+    padding: 10px 40px 20px 20px;
+    /* background: linear-gradient(141deg, white 0%, #f9f9f9 80%) !important;*/
+    background: white;
+    /*width: 36%;
+    left: 0;*/
+}
+
+.travel-highlight .spot.img3 .txt_box {
+    position: relative;
+    color: #333333;
+    /* background: linear-gradient(141deg, white 0%, #f9f9f9 80%) !important;*/
+    background: white;
+    padding: 10px 40px 20px 20px;
+    /* width: 33.33%;
+    right: 33.33%;
+    height: 100%;*/
+}
+
+
+.travel-highlight .spot.img2.landscape .txt_box p,
+.travel-highlight .spot.img3 .txt_box p {
+    position: relative;
+    padding-top: 10px;
+    bottom: auto;
+}
+
+.travel-highlight .spot.img2.landscape .txt_box:before,
+.travel-highlight .spot.img3 .txt_box:before {
+    display: none;
+}
+
+.travel-highlight .spot.img3 .img_box {
+    height: calc(36vw - 20px);
+    max-height: 380px;
+}
+
+.travel-highlight .spot.img2.portrait .txt_box {
+    width: 66%;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--每日行程-*/
+
+.txt_box p {
+    text-align: justify;
+}
+
+.travel-itinerary-day {
+    width: 100%;
+    padding-left: 40px;
+
+    display: block;
+}
+
+.travel-itinerary-day:last-child:after {
+    content: "●";
+    font-size: 22px;
+    position: relative;
+    left: -6px;
+    top: -12px;
+    color: #8b48a0;
+}
+
+
+.travel-itinerary-day .container {
+    width: 100%;
+    border-left: 2px solid #8b48a0;
+    padding: 0 0 40px 0;
+}
+
+
+
+
+.travel-itinerary-title {
+    min-height: 60px;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 60px;
+
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.travel-itinerary-title .day_count {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #8b48a0;
+    position: absolute;
+    text-align: center;
+
+    color: #ffffff;
+    font-size: 20px;
+    top: -15px;
+    left: -35px;
+}
+
+.travel-itinerary-title .day_count img {
+    display: none;
+}
+
+.travel-itinerary-title .day_count span {
+    position: relative;
+    left: 1px;
+    display: block;
+    font-size: 12px;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.travel-itinerary-title .day_count .txt {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    color: white;
+    font-size: 26px;
+
+    margin: 0px;
+}
+
+.travel-itinerary-title .title .type {
+    position: relative;
+   
+    left: -5px;
+    color: white;
+    background: #8b48a0;
+    display: inline-block;
+    border: 1px solid;
+    padding: 0 10px;
+
+    border-radius: 100px;
+
+}
+
+.travel-itinerary-title .title i.icon {
+    position: relative;
+    top: 2px;
+}
+
+
+.travel-itinerary-food {
+    padding: 0px 0 10px 60px;
+    position: relative;
+}
+
+.travel-itinerary-food .icon,
+.travel-itinerary-hotel .icon {
+    position: absolute;
+    top: 5px;
+    left: -25px;
+}
+
+.travel-itinerary-food .icon img,
+.travel-itinerary-hotel .icon img {
+    display: none;
+}
+
+.travel-itinerary-food .icon i,
+.travel-itinerary-hotel .icon i {
+    position: absolute;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    color: #8b48a0;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #8b48a0;
+}
+
+.travel-itinerary-food .box,
+.travel-itinerary-hotel .box {
+
+    line-height: 24px;
+}
+
+.travel-itinerary-food span {
+    margin-right: 30px;
+    display: block;
+}
+
+.travel-itinerary-hotel {
+    padding: 15px 0 0px 60px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.travel-itinerary-day .travel-itinerary-day-more {
+    display: none;
+}
+
+
+
+
+.travel-itinerary-spots {
+    text-align: center;
+}
+
+.travel-itinerary-spots .spot_box {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+    height: calc(1000px * 10/15);
+}
+
+.travel-itinerary-spots .other_box {
+    text-align: left;
+    width: 90%;
+    line-height: 24px;
+    margin: 20px auto;
+    /*   background: linear-gradient(145deg, #f4ecf5 0%, white 100%);*/
+    background: #f4ecf5;
+    padding: 20px;
+}
+
+
+
+
+.travel-itinerary-content {
+    padding-left: 15px;
+}
+
+
+.travel-itinerary-title .fa-long-arrow-right {
+    margin: 0 10px;
+}
+
+.travel-itinerary-icon {
+    margin-top: -30px;
+    font-size: 16px;
+    text-align: right;
+}
+
+.spot_box.grid_1 {
+
+    height: calc(1000px * 9/16);
+}
+
+.spot_box.grid_2 {
+    height: calc(1000px * 9/16 *0.8);
+}
+
+.spot_box.grid_3 {
+    display: inline-block;
+    height: calc(1000px * 9/16);
+}
+
+.spot_box.grid_4 {
+    display: inline-block;
+}
+
+.spot_box.grid_5 {
+    display: inline-block;
+}
+
+.spot_box.grid_6 {
+    height: calc(1000px * 9/16*0.8);
+}
+
+.spot_box .spot {
+    position: relative;
+    flex-grow: 1;
+    border: 5px solid white;
+    display: inherit;
+    overflow: hidden;
+
+    flex-grow: 2;
+    width: 33.33%;
+    /* min-width: 300px;*/
+    transition: 0.2s;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(184, 181, 181, 0.2);
+}
+
+
+.spot_box .spot:last-child {
+    margin-right: 0;
+}
+
+.spot_box .spot:not('.vr'):before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.spot_box .spot iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.spot_box.grid_3 .spot {
+    float: right;
+    height: 50%;
+    width: 66%;
+}
+
+.spot_box.grid_3 .spot:last-child {
+    width: 33.3%;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+}
+
+.spot_box.grid_4 .spot {
+    height: 40%;
+    width: 33.33%;
+    float: left;
+}
+
+.spot_box.grid_4 .spot:first-child {
+    width: 100%;
+    height: 60%;
+}
+
+.spot_box.grid_5 .spot {
+    height: 40%;
+    float: left;
+    width: 33.3%;
+}
+
+.spot_box.grid_5 .spot:first-child {
+    width: 66.66%;
+    height: 60%;
+}
+
+.spot_box.grid_5 .spot:nth-child(2) {
+    height: 60%;
+}
+
+.spot_box.grid_6 .spot {
+    height: 50%;
+}
+
+.spot_box.grid_7 .spot {
+
+    height: 25%;
+}
+
+.spot_box.grid_7 .spot:first-child {
+    width: 100%;
+    height: 50%;
+}
+
+.spot_box.grid_8 .spot {
+    height: 30%;
+}
+
+.spot_box.grid_8 .spot:first-child {
+    width: 50%;
+    height: 40%;
+}
+
+.spot_box.grid_8 .spot:nth-child(2) {
+    width: 50%;
+    height: 40%;
+}
+
+.spot_box .spot .option {
+    color: gray;
+    font-size: small;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    background-color: white;
+    opacity: 0.8;
+    line-height: 14px;
+    padding: 4px;
+}
+
+
+
+.spot_box .spot .txt_box {
+    padding: 10px 20px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+      justify-content: center;
+ 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+.spot_box .spot:hover .txt_box {
+     align-content: center;
+}
+
+.spot_box .spot .txt_box:after {
+    display: none;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgb(51, 49, 49) 100%);
+}
+
+.spot_box .spot:hover .txt_box:after {
+    display: block;
+}
+
+.spot_box .spot.only_word .txt_box:after {
+    display: block;
+    background: linear-gradient(to bottom, rgba(244, 243, 243, 0) 60%, rgba(244, 243, 243, 1) 95%);
+}
+
+@media screen\0 {
+
+    .spot_box .spot.only_word .txt_box:after,
+    .spot_box .spot:hover .txt_box:after {
+        display: none;
+    }
+
+}
+
+.spot_box.grid_1 .txt_box .location,
+.spot_box.grid_2 .txt_box .location {
+    margin-bottom: 10px;
+}
+
+.spot_box .spot.only_word .txt_box {
+    background: #f4f3f3;
+    color: black;
+    text-shadow: 0px 0px 0px transparent;
+    /* background-image: url(../css/assets/bk-blank_img.png);*/
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.spot_box .spot .txt_box .location {
+    font-weight: bolder;
+    font-size: 18px;
+    width: 95%;
+    line-height: 24px;
+    text-align: right;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+
+/*.spot_box .spot:hover .txt_box .location {
+    text-overflow: none;
+    white-space: normal;
+}*/
+
+.spot_box .spot.only_word .txt_box .location {
+    text-align: center;
+}
+
+
+.spot_box .spot .txt_box .description {
+    display: none;
+    overflow: hidden;
+    height: auto;
+    max-height: 85%;
+    width: 80%;
+    line-height: 24px;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.spot_box .spot.only_word .txt_box .description {
+    display: inline-block;
+    white-space: normal;
+    height: auto;
+    max-height: 85%;
+    width: 80%;
+}
+
+.spot_box .spot .txt_box .warning {
+    color: #fc6d3a;
+    display: none;
+}
+
+
+.spot_box .spot:hover .txt_box {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.2s;
+    color: white;
+}
+
+.spot_box .spot:hover .txt_box .description {
+
+    display: inline-block;
+}
+
+.spot_box .spot.only_word:hover .txt_box {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333333;
+}
+
+
+
+.spot_box .spot:hover .txt_box .location {
+    text-align: center;
+
+    transition: 0.2s;
+}
+
+.spot.detail {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.spot.detail .box {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.spot.detail .img_box {
+    max-width: 58%;
+    float: left;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    /* height: 400px;*/
+    /*background-color: rgba(0,0,0,0.7);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.spot.detail .img_box img {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.spot.detail .description {
+    text-align: justify;
+    margin: 2%;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+.spot.detail .location {
+    display: block;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.spot.detail .warning {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*立即報名手機板*/
+
+.travel-mobile-bottom-signUp {
+    opacity: 0.9;
+    display: inline-block;
+    padding: 10px;
+    background-color: #771a7a;
+    color: #ffffff;
+    display: none;
+    background: #42275a;
+    background: -webkit-linear-gradient(100deg, #734b6d, #42275a);
+    background: linear-gradient(100deg, #734b6d, #42275a);
+}
+
+
+
+.travel-mobile-bottom-signUp .info {
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.travel-mobile-bottom-signUp .info .price {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #ffd200;
+    margin: 5px 0;
+}
+
+.travel-mobile-bottom-signUp .remain_space {
+    color: #ffd200;
+    display: block;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+}
+
+.travel-mobile-bottom-signUp .info .price_info {
+
+    color: white;
+    text-decoration: underline;
+}
+
+.travel-mobile-bottom-signUp .info .price:after {
+    content: "元起";
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.travel-mobile-bottom-signUp .btn_box {
+    width: 50%;
+    display: inline-block;
+}
+
+.travel-mobile-bottom-signUp .btn_box .btn {
+    width: 100%;
+    display: block;
+    font-size: 24px;
+    color: #ffd200;
+    float: right;
+    border-radius: 100px;
+    padding: 10px 10px;
+    border: 2px solid #ffef00;
+    margin: 5px 0px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.travel-mobile-bottom-signUp .btn_box .btn:hover {
+    background: #ffd200;
+    color: #42275a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 自費項目 */
+
+.travel-optional {
+    border: 1px solid #bbbbbb;
+    margin: 0 10px;
+    padding: 10px;
+    line-height: 24px;
+}
+
+.travel-optional .travel-optional-title {
+    font-size: 20px;
+    line-height: 50px;
+    border-bottom: 1px solid #bbbbbb;
+    margin-bottom: 10px;
+}
+
+.travel-optional .travel-optional-content {
+    padding: 0 20px;
+}
+
+.travel-optional-info {
+    display: inline-block;
+    padding: 0 4px;
+    color: #0082c8;
+    text-decoration: underline;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.travel-optional-info:focus,
+.travel-optional-info:hover {
+    background-color: #0082c8;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*作業說明*/
+
+.travel-description {
+    padding-left: 25px;
+    line-height: 24px;
+}
+
+.travel-description .title {
+    margin: 5px 0;
+}
+
+.travel-description ul {
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 行程介紹選單 */
+
+.travel-innerMenu {
+    border-bottom: 2px solid #cccccc;
+    line-height: 50px;
+}
+
+.travel-innerMenu a {
+    display: inline-block;
+    font-size: 20px;
+    color: #000000;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.travel-innerMenu a:focus,
+.travel-innerMenu a:hover {
+    color: #771a7a;
+    text-decoration: none;
+}
+
+
+
+.travel-innerMenu-fixed {
+    width: 100%;
+    line-height: 50px;
+    background-color: #ffffff;
+    position: fixed;
+    top: -150px;
+    left: 0;
+    opacity: 0.95;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    display: block;
+    z-index: 10;
+}
+
+.travel-innerMenu-fixed a {
+    display: inline-block;
+    font-size: 20px;
+    color: rgba(55, 71, 79, 1);
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.travel-innerMenu-fixed a:focus,
+.travel-innerMenu-fixed a:hover {
+    color: #771a7a;
+    text-decoration: none;
+}
+
+.travel-innerMenu-fixed a.active {
+    border-bottom: 5px solid #771a7a;
+}
+
+.travel-innerMenu-fixed a.travel-innerMenu-fixed-signUpBtn {
+    font-size: 24px;
+    padding: 0 20px;
+    border-radius: 100px;
+    display: inline-block;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: #ff4200;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.travel-innerMenu-fixed a.travel-innerMenu-fixed-signUpBtn:focus,
+.travel-innerMenu-fixed a.travel-innerMenu-fixed-signUpBtn:hover {
+    background-color: #771a7a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*其他 - z覆蓋bootstrap*/
+
+.row {
+    margin: 0px;
+}
+
+.travel-panel .panel-default {
+    background-color: transparent;
+    border: 0px solid transparent;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.travel-panel {
+    margin-bottom: 0px;
+}
+
+.travel-panel .panel-default .travel-block {
+    background-color: transparent;
+}
+
+.travel-panel .panel-default>.panel-heading {
+
+    background: #42275a;
+    background: -webkit-linear-gradient(45deg, #734b6d, #42275a);
+    background: linear-gradient(45deg, #734b6d, #42275a);
+
+    color: white;
+    border-radius: 0;
+    width: 100%;
+    display: none;
+
+    font-weight: bold;
+
+    position: relative;
+    text-align: center;
+}
+
+
+.travel-panel .panel-default>.panel-heading a {
+    display: block;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+
+.moreGroup-block {
+    width: 100%;
+    display: block;
+    background-color: #f1f1f1;
+    padding: 10px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.moreGroup-block .row {
+    width: 100%;
+}
+
+.moreGroup-block .price {
+    color: #fc6d3a;
+    font-size: 24px;
+}
+
+.moreGroup-block a.ensure {
+    background-color: #ff9c00;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.moreGroup-btn {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.moreGroup-btn:focus,
+.moreGroup-btn:hover {
+    text-decoration: none;
+}
+
+.moreGroup-btn.moreGroup-btn-close {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+.moreGroup-btn.moreGroup-btn-see {
+    background-color: #ffd200;
+    color: #771a7a;
+}
+
+.moreGroup-btn.moreGroup-btn-see:focus,
+.moreGroup-btn.moreGroup-btn-see:hover {
+    color: #ffd200;
+    background-color: #771a7a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*404*/
+
+.travel-404 {
+    background: white;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.travel-404 .item_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.travel-404 .warning {
+    width: 100%;
+    margin: 50px 0px 10px;
+    background: white;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    color: #771a7a;
+    font-size: 30px;
+}
+
+.travel-404 .warning:before {
+    display: none;
+}
+
+.travel-404 .warning>div {
+    display: inline-block;
+    margin: 10px;
+    padding-right: 30px;
+}
+
+.travel-404 .warning .gray {
+    color: gray;
+}
+
+.travel-404 .warning i {
+    font-size: 132px;
+    color: #771a7a;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.travel-404 .warning i.fa-hand-o-down {
+    width: auto;
+    font-size: 20px;
+}
+
+.travel-404 .item {
+    position: relative;
+    margin: 0 5px;
+    width: 30vw;
+    min-width: 300px;
+}
+
+.travel-404 .item.center {
+    width: 40vw;
+    min-width: 400px;
+}
+
+.travel-404 .item.center:before {
+    content: '推薦';
+    width: 80px;
+    padding: 5px;
+    background: rgba(225, 225, 225, 0.8);
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    opacity: 0.9;
+}
+
+
+.travel-404 .item .photo {
+    overflow: hidden;
+}
+
+.travel-404 .item .photo img {
+    height: 350px;
+    width: auto;
+}
+
+.travel-404 .item.center .photo img {
+    height: 400px;
+}
+
+.travel-404 .item .txt {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    padding: 10px 15px;
+    bottom: 0;
+}
+
+.travel-404 .item .txt .title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 1.5;
+    color: white;
+    line-height: 24px;
+}
+
+.travel-404 .item .txt .price {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: right;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*元件*/
+
+a.link {
+    display: inline-block;
+    /* color: #008cd7;*/
+    color: #601986;
+    transition: .3s;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+a.link:hover {
+    text-decoration: underline;
+}
+
+ul.list_num li {
+    list-style: decimal;
+}
+
+ul.list_num li>ul>li {
+    list-style: disc;
+}
+
+ul.list_num li>ul>li>ul>li {
+    list-style: circle;
+}
+
+ul.list_num li.sub {
+    list-style: none;
+    padding-left: 100px;
+}
+
+ul li.imp {
+    color: #ff4200;
+}
+
+.division {
+    width: 100%;
+    height: 1px;
+    border: 2px dashed #efefef;
+}
+
+.item .title span:first-child {
+    font-weight: bolder;
+    border-left: 4px solid #9e28b5;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.item.highlight .title span:first-child {
+    border-left: 4px solid #de9fea;
+}
+
+.travel-mobile-bottom-signUp .travel-mobile-bottom-signUp-BTN {
+    border-radius: 100px;
+}
+
+.shareIcon .tooltip>.tooltip-inner {
+    background: white;
+    color: #666;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.shareIcon .tooltip>.tooltip-arrow {
+    border-left-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*共用*/
+
+.warning {
+    background-color: #f4ecf5;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.warning .txt_box {
+    position: relative;
+
+    color: #333333;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    width: auto;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
+}
+
+
+.warning .txt_box .title {
+    display: inline-block;
+
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    flex-basis: 30%;
+    position: relative;
+}
+
+.warning .txt_box .title i {
+    color: #FBAB8A;
+    opacity: 0.6;
+    font-size: 20px;
+    margin: 0 5px;
+    position: relative;
+    top: -10px;
+}
+
+.warning .txt_box .txt {
+    display: inline-block;
+    position: relative;
+    line-height: 24px;
+    margin-left: 0;
+    flex-basis: 70%;
+    padding: 25px;
+    background: linear-gradient(141deg, white 0%, #f9f9f9 80%) !important;
+}
+
+.warning .txt_box:before {
+    display: none;
+}
+
+.warning:before {
+    content: "";
+    width: 28%;
+    height: 94%;
+    position: absolute;
+    border: 1px solid white;
+    box-shadow: 0 0 2px #ebe5e5;
+    display: inline-block;
+    background: none;
+    left: 1%;
+    top: 3%;
+    ;
+}
+
+.list_num {
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+
+
+@keyframes bkbounce {
+
+    0% {
+        height: 0px;
+    }
+
+    40% {
+        height: 20px;
+    }
+
+    80% {
+        height: 10px;
+    }
+
+
+
+
+    100% {
+        height: 15px;
+    }
+}
+
+@keyframes bounce {
+
+    0% {
+        margin-top: 0px;
+    }
+
+    40% {
+        margin-top: 20px;
+    }
+
+    80% {
+        margin-top: 10px;
+    }
+
+    100% {
+        margin-top: 15px;
+    }
+}
