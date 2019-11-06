@@ -29,385 +29,65 @@ body {
 }
 
 
+/*portfolio*/
+div.division{
+    height: 1px;
+    width: 80%;
+    border:1px solid #e1dfdf;
+    margin: 60px auto;
+    border-radius: 30px;
 
-
-
-
-
-
-
-
-
-
-
-/* 版面設定 */
-
-.star-container {
-    width: 1200px;
-
-    position: relative;
-    margin: 0 auto;
+}
+.work {
+    margin: 40px 20px 60px 20px;
 }
 
-.travel-panel {
-    display: block;
-}
-
-.travel-panel .panel-heading {
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 麵包屑 */
-
-.path .breadcrumb {
-    margin: 10px 0 5px 0;
-    padding-right: 120px;
-}
-
-
-.path .breadcrumb {
-    background-color: transparent;
-    font-size: 14px;
-    padding: 0;
-}
-
-.path .breadcrumb>li {
-    display: inline-block;
-}
-
-.path .breadcrumb>li a {
-    color: #666666;
-    transition: .3s;
-}
-
-.path .breadcrumb>li a:focus,
-.path .breadcrumb>li a:hover {
-    color: #771a7a;
-    background-color: #eee4ee;
-    text-decoration: none;
-}
-
-.path .breadcrumb>li+li:before {
-    font-family: FontAwesome;
-    content: "\f105";
-    color: #666666;
-    font-weight: normal;
-}
-
-.groupNum {
-    margin-bottom: 10px;
-    color: #808080;
-    font-size: 14px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 功能鍵 */
-
-.shareIcon {
-    width: 35px !important;
-    position: fixed;
-    width: 35px;
-    top: calc(50% - 30*4px);
-    right: 22px;
-    z-index: 4;
-}
-
-.shareIcon a {
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #c2c1c1;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    line-height: 32px;
-    margin: 2px;
-    background-size: contain;
-    width: 30px;
-    height: 30px;
-}
-
-.shareIcon i {
-    position: relative;
-    line-height: 33px;
-}
-
-.shareIcon .icon-word {
-    background-image: url(../css/assets/word.svg);
-}
-
-.shareIcon .icon-fb {
-    background-image: url(../css/assets/icon-fb-gray.svg);
-}
-
-.shareIcon .icon-line {
-    background-image: url(../css/assets/icon-line.svg);
-}
-
-.shareIcon .icon-print {
-    background-image: url(../css/assets/icon-print.svg);
-}
-
-.shareIcon .icon-line:hover {
-    background-color: #00b900;
-}
-
-.shareIcon .icon-word:hover {
-    background-color: #285395;
-}
-
-.shareIcon .icon-print:hover {
-    background-color: #ac5d2d;
-}
-
-.shareIcon .icon-fb:hover {
-    background-color: #4867aa;
-}
-
-.shareIcon .icon-qrcode:hover {
-    background-color: #8b48a0;
-}
-
-.shareIcon .tooltip {
-
-    word-break: keep-all;
-}
-
-.qrcode_img {
-    /*position: absolute;*/
-    width: calc(100% - 30px);
-    height: 40vh;
+.work .bg {
+    padding: 60px;
     margin: 20px 0;
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 
+}
 
-    top: calc(50% - 25vh);
+.work .cub .bg {
+    background: #d3f2d3;
+}
+
+.work .fcb .bg {
+    background: #ffeebd;
+}
+
+.work .star .bg {
+    background: #f5d9fe;
+}
+
+.work .star .bg img {
+  
+}
+
+.work .description h3 {
+    margin: 10px 0;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--簡介--*/
-
-.travelInformation .travelInformation-more-mobile {
-    width: 100%;
-    height: 100px;
-    padding-top: 60px;
-    line-height: 40px;
-    text-align: center;
-    display: none;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
-    background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
-    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
-    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+.work .description ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.travelInformation .travelInformation-more-mobile>a {
-    color: #007cbf;
-    text-decoration: underline;
-}
+.work .description ul li {
+    min-width: 50%;
+    list-style: disc;
+    list-style-position: inside;
 
-.travelInformation .travelTitle {
-
-    margin-top: 0;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 40px;
-}
-
-.introduction {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 15px;
 
 }
 
-.introduction .brief_info {
-    width: 50%;
-    float: left;
-    min-height: 320px;
-    margin: 0 0 10px 0px;
-}
+
+/*portfolio*/
 
 
-.introduction .brief_info .spec {
-    max-width: 600px;
-    border-bottom: 2px dashed #efefef;
-}
-
-.introduction .brief_info .spec:last-child {
-    border: none;
-}
-
-.introduction .spec .item_container {
-    margin: 10px 0 15px 0;
-}
-
-.introduction .spec .item {
-    position: relative;
-    padding: 10px 10px 5px 0;
-}
-
-.introduction .spec .item .title {
-    position: absolute;
-}
 
 .introduction .spec .item_container.info .item .title {
     position: relative;
@@ -1953,7 +1633,7 @@ body {
 
 .travel-itinerary-title .title .type {
     position: relative;
-   
+
     left: -5px;
     color: white;
     background: #8b48a0;
@@ -2222,12 +1902,13 @@ body {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
-      justify-content: center;
- 
+    justify-content: center;
+
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
+
 .spot_box .spot:hover .txt_box {
-     align-content: center;
+    align-content: center;
 }
 
 .spot_box .spot .txt_box:after {
