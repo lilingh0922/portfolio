@@ -1,6 +1,7 @@
 body {
     color: #333333;
     min-width: 320px;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .txt_rt {
@@ -23,29 +24,43 @@ body {
     margin-bottom: 30px;
 }
 
-.h2 {
-    /*  color: #932C8B;*/
-    font-weight: bolder;
+h2{
+    font-size: 22px;
+    line-height: 50px;
 }
 
 
 /*portfolio*/
-div.division{
+div.division {
     height: 1px;
     width: 80%;
-    border:1px solid #e1dfdf;
+    border: 1px solid #e1dfdf;
     margin: 60px auto;
     border-radius: 30px;
 
 }
+
+nav {
+    margin: 20px;
+}
+
 .work {
     margin: 40px 20px 60px 20px;
 }
 
 .work .bg {
-    padding: 60px;
-    margin: 20px 0;
+    padding: 6%;
+    margin: 60px 0 20px 0;
 
+}
+.work .bg  h2{
+    margin:0 0 30px 0;
+    color: grey;
+}
+.work .bg img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 .work .cub .bg {
@@ -53,15 +68,24 @@ div.division{
 }
 
 .work .fcb .bg {
-    background: #ffeebd;
+    background: #fef7e1;
 }
 
 .work .star .bg {
-    background: #f5d9fe;
+    background: #fceefc;
 }
 
-.work .star .bg img {
-  
+.arrow{
+    width: 100px;
+    height: 250px;
+    background: url("");
+    margin: 50px 100px;
+}
+
+
+
+.work .description {
+    margin: 60px 0 0px 0;
 }
 
 .work .description h3 {
@@ -69,20 +93,28 @@ div.division{
 }
 
 
-
+.work .description .text{
+    margin: 4px 0;
+}
 .work .description ul {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  /*  justify-content: space-between;*/
 }
 
 .work .description ul li {
-    min-width: 50%;
-    list-style: disc;
+    min-width: 160px;
+    list-style:circle;
     list-style-position: inside;
-
+    margin: 4px auto;
 
 }
+.star .demo {
+   
+margin: 100px 0;
+}
+
 
 
 /*portfolio*/
